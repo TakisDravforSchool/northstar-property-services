@@ -1,0 +1,171 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Northstar Property Services</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=25">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img
+                src="{% static 'website/images/northstar-logo.jpeg' %}"
+                alt="Northstar Property Services Logo">
+
+            
+            <div class="logo-text">
+                <span>Northstar</span>
+                <small>Property Services</small>
+            </div>
+        </a>
+    </div>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <a class="phone-btn" href="{% url 'home' %}#quote">Request a Quote</a>
+</header>
+
+<section class="about-hero">
+    <img
+        class="about-hero-image"
+        src="{% static 'website/images/service-banner.PNG' %}"
+        alt="Northstar Property Services">
+
+    <div class="about-hero-overlay">
+        <p>About Us</p>
+        <h1>Local Care.<br>Year-Round.</h1>
+        <h3>Helping Edmonton homeowners stay safe in winter and grow strong in summer.</h3>
+    </div>
+</section>
+
+<section class="about-story">
+    <div class="about-text">
+        <p class="section-label">Our Story</p>
+        <h2>Built on Hard Work.<br>Focused on You.</h2>
+
+        <p>
+            Northstar Property Services was created with a simple goal:
+            to provide reliable property care with honest communication
+            and dependable work.
+        </p>
+
+        <p>
+            Whether it is clearing snow during Alberta winters or helping lawns
+            grow healthier in the summer, we focus on showing up, doing the job right,
+            and treating every property with care.
+        </p>
+    </div>
+
+    <div class="about-photo">
+        <img
+            src="{% static 'website/images/about-equipment.PNG' %}"
+            alt="Northstar Property Services equipment">
+    </div>
+</section>
+
+<section class="values-section">
+    <p class="section-label center">Our Values</p>
+    <h2>What You Can Expect From Us</h2>
+
+    <div class="values-grid">
+        <div class="value-card">
+            <div class="value-icon">🛡️</div>
+            <h3>Reliable</h3>
+            <p>We show up on time and get the job done right.</p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Trusted</h3>
+            <p>Honest pricing, clear communication, and dependable service.</p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-icon">🌱</div>
+            <h3>Quality</h3>
+            <p>We use the right tools and take pride in clean results.</p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-icon">📍</div>
+            <h3>Local</h3>
+            <p>We live and work in the community we serve.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-equipment">
+    <div class="equipment-images">
+
+        <div class="equipment-photo">
+            <img
+                src="{% static 'website/images/snowremoval-equipment.PNG' %}"
+                alt="Snow removal equipment">
+        </div>
+
+        <div class="equipment-photo">
+            <img
+                src="{% static 'website/images/lawn-equipment.PNG' %}"
+                alt="Lawn aeration equipment">
+        </div>
+
+    </div>
+
+    <div class="equipment-text">
+        <p class="section-label">Why Choose Northstar</p>
+        <h2>Professional Equipment.<br>Professional Results.</h2>
+
+        <p>
+            We focus on using the right equipment for the job, whether that means
+            clearing snow efficiently or helping lawns breathe through core aeration.
+        </p>
+
+        <p>
+            Our goal is simple: make property care easier for homeowners with
+            dependable seasonal service.
+        </p>
+    </div>
+</section>
+
+<section class="about-cta">
+    <div>
+        <h2>Let’s Work Together</h2>
+        <p>Have questions or ready to get started? We’d love to hear from you.</p>
+    </div>
+
+    <div>
+        <a href="{% url 'home' %}#quote" class="primary-btn">Request a Free Quote</a>
+        <h3>📞 (780) 224-8322</h3>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <h4>Northstar</h4>
+        <p>Property Services</p>
+    </div>
+
+    <div>
+        <h4>Professional. Reliable. Local.</h4>
+        <p>© 2026 Northstar Property Services. All rights reserved.</p>
+    </div>
+
+    <div>
+        <h4>Contact</h4>
+        <p>📞 (780) 224-8322</p>
+    </div>
+</footer>
+
+</body>
+</html>

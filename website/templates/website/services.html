@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services | Northside Snow Removal & Aeration</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=25">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img
+                src="{% static 'website/images/northstar-logo.jpeg' %}"
+                alt="Northstar Property Services Logo">
+
+                
+            <div class="logo-text">
+                <span>Northstar</span>
+                <small>Property Services</small>
+            </div>
+        </a>
+    </div>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <a class="phone-btn" href="{% url 'home' %}#quote">Request a Quote</a>
+</header>
+
+<section class="services-hero">
+    <img
+        class="services-hero-image"
+        src="{% static 'website/images/service-banner.PNG' %}"
+        alt="Snow Removal and Lawn Aeration Services">
+
+    <div class="services-hero-overlay">
+        <p>Our Services</p>
+        <h1>Snow Removal &<br>Lawn Aeration</h1>
+        <h3>Professional. Reliable. Local.</h3>
+        <span>Proudly serving Edmonton and surrounding areas.</span>
+        <a href="{% url 'home' %}#quote" class="primary-btn">Request a Quote</a>
+    </div>
+</section>
+
+<section class="service-detail">
+    <div class="service-text">
+        <h2>❄️ Snow Removal</h2>
+        <p>
+            Keep your property safe and accessible all winter long.
+            We provide fast, reliable snow removal for residential and commercial properties.
+        </p>
+
+        <ul>
+            <li>Driveway Clearing</li>
+            <li>Sidewalk Clearing</li>
+            <li>Walkway Clearing</li>
+            <li>Ice Control & Salting</li>
+            <li>One-Time Visits</li>
+            <li>Seasonal Contracts</li>
+        </ul>
+    </div>
+
+    <div class="service-photo">
+        <img 
+            src="{% static 'website/images/snow-removal-service.PNG' %}"
+            alt="Snow Removal Service">
+    </div>
+</section>
+
+<section class="mini-services">
+    <div class="mini-card">
+        <div class="mini-icon">🏠</div>
+        <h3>Driveways</h3>
+        <p>We clear driveways of all sizes so you can come and go with ease.</p>
+    </div>
+
+    <div class="mini-card">
+        <div class="mini-icon">🚶</div>
+        <h3>Sidewalks</h3>
+        <p>Safe, clear walkways for your family, guests, and customers.</p>
+    </div>
+
+    <div class="mini-card">
+        <div class="mini-icon">🧂</div>
+        <h3>Salting & Ice Control</h3>
+        <p>Help prevent slips and falls with professional ice control.</p>
+    </div>
+</section>
+
+<section class="service-detail lawn-section">
+    <div class="service-photo">
+        <img 
+            src="{% static 'website/images/lawn-aeration-service.PNG' %}"
+            alt="Lawn Aeration Service">
+    </div>
+
+    <div class="service-text">
+        <h2>🌱 Lawn Aeration</h2>
+        <p>
+            Core aeration is one of the best ways to help your lawn breathe,
+            reduce soil compaction, and encourage strong root growth.
+        </p>
+
+        <ul>
+            <li>Core Aeration</li>
+            <li>Reduces Soil Compaction</li>
+            <li>Improves Water & Nutrient Absorption</li>
+            <li>Healthier, Greener Lawn</li>
+            <li>Better Growth & Stronger Roots</li>
+        </ul>
+    </div>
+</section>
+
+<section class="mini-services lawn-mini">
+    <div class="mini-card">
+        <div class="mini-icon green-mini">🌾</div>
+        <h3>Core Aeration</h3>
+        <p>We remove small plugs of soil to allow your lawn to breathe.</p>
+    </div>
+
+    <div class="mini-card">
+        <div class="mini-icon green-mini">💧</div>
+        <h3>Healthier Lawn</h3>
+        <p>Improved absorption of water, air, and nutrients leads to thicker grass.</p>
+    </div>
+
+    <div class="mini-card">
+        <div class="mini-icon green-mini">🍃</div>
+        <h3>Better Growth</h3>
+        <p>Stronger roots mean a healthier, greener lawn all season long.</p>
+    </div>
+</section>
+
+<section class="services-before-after">
+    <h2>Before & After</h2>
+
+    <div class="services-gallery-grid">
+
+        <div class="services-gallery-card">
+            <img src="{% static 'website/images/services-snow-before.PNG' %}" alt="Snow Before">
+            <span class="before-tag">BEFORE</span>
+        </div>
+
+        <div class="services-gallery-card">
+            <img src="{% static 'website/images/services-snow-after.PNG' %}" alt="Snow After">
+            <span class="after-tag">AFTER</span>
+        </div>
+
+        <div class="services-gallery-card">
+            <img src="{% static 'website/images/services-lawn-before.PNG' %}" alt="Lawn Before">
+            <span class="before-tag">BEFORE</span>
+        </div>
+
+        <div class="services-gallery-card">
+            <img src="{% static 'website/images/services-lawn-after.PNG' %}" alt="Lawn After">
+            <span class="after-tag">AFTER</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="bottom-info">
+    <div class="service-area-box">
+        <h2>📍 Service Area</h2>
+
+        <div class="area-grid">
+            <p>✓ Edmonton</p>
+            <p>✓ St. Albert</p>
+            <p>✓ Sherwood Park</p>
+            <p>✓ Spruce Grove</p>
+            <p>✓ Leduc</p>
+            <p>✓ Surrounding Areas</p>
+        </div>
+
+        <p>Not sure if we service your area? <strong>Contact us!</strong></p>
+    </div>
+
+    <div class="cta-box">
+        <h2>Ready for a Free Quote?</h2>
+        <p>Let us take care of the hard work so you can enjoy your property year-round.</p>
+        <a href="{% url 'home' %}#quote" class="primary-btn">Request a Quote</a>
+        <h3>📞 (780) 224-8322</h3>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <h4>Northside</h4>
+        <p>Snow Removal & Aeration</p>
+    </div>
+
+    <div>
+        <h4>Professional. Reliable. Local.</h4>
+        <p>© 2026 Northside. All rights reserved.</p>
+    </div>
+
+    <div>
+        <h4>Contact</h4>
+        <p>(780) 224-8322</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Northstar Property Services</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=34">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/northstar-logo.jpeg' %}" alt="Northstar Property Services">
+
+            <div class="logo-text">
+                <span>Northstar</span>
+                <small>Property Services</small>
+            </div>
+        </a>
+    </div>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <a class="phone-btn" href="tel:7802248322">📞 (780) 224-8322</a>
+</header>
+
+<section class="contact-hero">
+    <img
+        class="contact-hero-image"
+        src="{% static 'website/images/pricing-banner.PNG' %}"
+        alt="Contact Northstar Property Services">
+
+    <div class="contact-hero-overlay">
+        <p>Contact Us</p>
+        <h1>Contact Us</h1>
+        <h3>Get a free quote or ask us a question.</h3>
+    </div>
+</section>
+
+<section class="contact-main">
+
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+                <h3>Phone</h3>
+                <p>(780) 224-8322</p>
+                <small>Call or text anytime</small>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+                <h3>Service Area</h3>
+                <p>Edmonton and surrounding areas</p>
+                <small>St. Albert, Sherwood Park, Spruce Grove, Leduc and more.</small>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div>
+                <h3>Hours</h3>
+                <p>Mon – Sun: 7:00 AM – 8:00 PM</p>
+                <small>We work when you need us.</small>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+                <h3>Response Time</h3>
+                <p>Usually within a few hours</p>
+                <small>We aim to respond fast.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-quote-box">
+        <h2>Request a Free Quote</h2>
+
+        <p>
+            Ready to get started? Fill out our quote form and we’ll get back to you
+            with a free, no-obligation estimate.
+        </p>
+
+        <a href="{% url 'home' %}#quote" class="primary-btn">
+            Request a Free Quote
+        </a>
+
+        <small>Your information is secure and will never be shared.</small>
+    </div>
+
+</section>
+
+<section class="social-section">
+    <h2>Follow Northstar Property Services</h2>
+    <p>Stay up to date with our latest projects, tips, and updates.</p>
+
+    <div class="social-grid">
+
+        <a href="#" class="social-card">
+            <div class="social-icon">📸</div>
+            <h3>Instagram</h3>
+            <p>Follow for before & after photos, project highlights, and seasonal tips.</p>
+            <span>Coming Soon →</span>
+        </a>
+
+        <a href="#" class="social-card">
+            <div class="social-icon">👍</div>
+            <h3>Facebook</h3>
+            <p>Service updates, customer reviews, announcements, and local posts.</p>
+            <span>Coming Soon →</span>
+        </a>
+
+        <a href="#" class="social-card">
+            <div class="social-icon">🎥</div>
+            <h3>TikTok</h3>
+            <p>Short videos of snow removal, lawn aeration, and property care work.</p>
+            <span>Coming Soon →</span>
+        </a>
+
+    </div>
+</section>
+
+<section class="contact-cta">
+    <div>
+        <h2>Ready for Reliable Property Care?</h2>
+        <p>
+            Let Northstar Property Services take care of your property
+            so you can focus on what matters most.
+        </p>
+    </div>
+
+    <a href="{% url 'home' %}#quote" class="primary-btn">
+        Request a Free Quote
+    </a>
+</section>
+
+<footer>
+    <div>
+        <h4>Northstar</h4>
+        <p>Property Services</p>
+    </div>
+
+    <div>
+        <h4>Professional. Reliable. Local.</h4>
+        <p>© 2026 Northstar Property Services. All rights reserved.</p>
+    </div>
+
+    <div>
+        <h4>Contact</h4>
+        <p>(780) 224-8322</p>
+    </div>
+</footer>
+
+</body>
+</html>

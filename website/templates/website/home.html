@@ -1,0 +1,230 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Northside Snow Removal & Aeration</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=40">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img
+                src="{% static 'website/images/northstar-logo.jpeg' %}"
+                alt="Northstar Property Services Logo">
+
+            <div class="logo-text">
+                <span>Northstar</span>
+                <small>Property Services</small>
+            </div>    
+        </a>
+    </div>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <a class="phone-btn" href="tel:7802248322">📞 (780) 224-8322</a>
+</header>
+
+<section class="hero-banner">
+    <img 
+        class="hero-main-image"
+        src="{% static 'website/images/snow-aeration-hero (2).png' %}"
+        alt="Snow removal and lawn aeration">
+
+    <div class="hero-overlay">
+        <p class="tagline">Winter or summer, we've got you covered</p>
+
+        <h1>
+            Snow Removal<br>
+            &<br>
+            Lawn Aeration
+        </h1>
+
+        <p class="hero-subtitle">
+            Keeping your property clean, safe & healthy all year round.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#quote" class="primary-btn">Get a Free Quote</a>
+            <a href="tel:5871234567" class="secondary-btn">Call Now</a>
+        </div>
+    </div>
+</section>
+
+<main class="home-layout">
+
+    <section class="left-column">
+
+        <section class="services">
+            <h2>Our Services</h2>
+
+            <div class="services-layout">
+
+                <div class="service-grid">
+
+                    <div class="service-card snow-card">
+                        <div class="service-icon">❄️</div>
+
+                        <div class="service-content">
+                            <h3>Snow Removal</h3>
+                            <ul>
+                                <li>Driveways</li>
+                                <li>Sidewalks</li>
+                                <li>Walkways</li>
+                                <li>Seasonal Contracts</li>
+                                <li>Ice Control / Salting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card lawn-card">
+                        <div class="service-icon green-icon">🌱</div>
+
+                        <div class="service-content">
+                            <h3>Lawn Aeration</h3>
+                            <ul>
+                                <li>Core Aeration</li>
+                                <li>Healthier Lawn</li>
+                                <li>Better Growth</li>
+                                <li>Thicker Grass</li>
+                                <li>Summer Service</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="why-sidebar">
+
+                    <div class="why-item">
+                        <div class="why-icon">🛡️</div>
+                        <div>
+                            <h4>Reliable & On Time</h4>
+                            <p>We show up when we say we will.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon green-icon">💲</div>
+                        <div>
+                            <h4>Affordable Pricing</h4>
+                            <p>Competitive rates, no hidden fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon">📍</div>
+                        <div>
+                            <h4>Local & Trusted</h4>
+                            <p>Proudly serving Edmonton and surrounding areas.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon green-icon">👍</div>
+                        <div>
+                            <h4>Satisfaction Guaranteed</h4>
+                            <p>Your satisfaction is our priority.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Before & After</h2>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-card">
+                    <img src="{% static 'website/images/home-snow-before.PNG' %}" alt="Snow Before">
+                    <span class="before-tag">BEFORE</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="{% static 'website/images/home-snow-after.PNG' %}" alt="Snow After">
+                    <span class="after-tag">AFTER</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="{% static 'website/images/home-lawn-before.PNG' %}" alt="Lawn Before">
+                    <span class="before-tag">BEFORE</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="{% static 'website/images/home-lawn-after.PNG' %}" alt="Lawn After">
+                    <span class="after-tag">AFTER</span>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <aside class="quote-box" id="quote">
+        <h2>Get a Free Quote</h2>
+
+        <form class="quote-form" method="POST" action="{% url 'home' %}">
+            {% csrf_token %}
+
+            <div class="form-row">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="text" name="phone_number" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="address" placeholder="Address / Location" required>
+            </div>
+
+            <div class="form-row">
+                <select name="service_needed" required>
+                    <option value="">Service Needed</option>
+                    <option value="Snow Removal">Snow Removal</option>
+                    <option value="Lawn Aeration">Lawn Aeration</option>
+                    <option value="Both">Both</option>
+                </select>
+
+                <select name="property_type" required>
+                    <option value="">Property Type</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+            </div>
+
+            <textarea name="additional_details" placeholder="Additional Details (optional)"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </aside>
+
+</main>
+
+<footer>
+    <div>
+        <h4>Service Areas</h4>
+        <p>Edmonton • St. Albert • Sherwood Park • Spruce Grove • Leduc</p>
+    </div>
+
+    <div>
+        <h4>Call Us</h4>
+        <p>(780) 224-8322</p>
+    </div>
+
+    <div>
+        <h4>Email Us</h4>
+        <p>info@northstarpropertyservices.ca</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | Northstar Property Services</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=33">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/northstar-logo.jpeg' %}" alt="Northstar Property Services">
+
+            <div class="logo-text">
+                <span>Northstar</span>
+                <small>Property Services</small>
+            </div>
+        </a>
+    </div>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <a class="phone-btn" href="{% url 'home' %}#quote">
+        Request a Quote
+    </a>
+
+</header>
+
+<!-- HERO -->
+
+<section class="gallery-hero">
+
+    <img
+        class="gallery-hero-image"
+        src="{% static 'website/images/pricing-banner.PNG' %}"
+        alt="Gallery">
+
+    <div class="gallery-hero-overlay">
+        <p>Gallery</p>
+        <h1>Gallery</h1>
+        <h3>Real project photos coming soon.</h3>
+    </div>
+
+</section>
+
+<!-- COMING SOON CARD -->
+
+<section class="gallery-coming-soon">
+
+    <div class="gallery-coming-soon-card">
+
+        <div class="gallery-icon">
+            📸
+            Photos Coming Soon
+        </div>
+
+        <h2>Gallery Coming Soon</h2>
+
+        <p>
+            We're preparing for our first season of service.
+        </p>
+
+        <p>
+            As we complete snow removal and lawn aeration projects throughout Edmonton and surrounding areas,
+            we'll add real photos of our work here.
+        </p>
+
+        <div class="gallery-divider"></div>
+
+        <h3>
+            No stock photos.<br>
+            No fake projects.<br>
+            Just real results from real customers.
+        </h3>
+
+    </div>
+
+</section>
+
+<!-- WHAT YOU'LL SEE -->
+
+<section class="gallery-features">
+
+    <h2>What You'll See Here Soon</h2>
+
+    <div class="gallery-features-grid">
+
+        <div class="gallery-feature">
+            <div class="feature-icon">❄️</div>
+            <h3>Snow Removal</h3>
+            <p>
+                Before & after driveway clearing.
+            </p>
+        </div>
+
+        <div class="gallery-feature">
+            <div class="feature-icon">🧂</div>
+            <h3>Ice Control</h3>
+            <p>
+                Salting and winter safety results.
+            </p>
+        </div>
+
+        <div class="gallery-feature">
+            <div class="feature-icon">🌱</div>
+            <h3>Lawn Aeration</h3>
+            <p>
+                Healthier lawns and seasonal improvements.
+            </p>
+        </div>
+
+        <div class="gallery-feature">
+            <div class="feature-icon">🏡</div>
+            <h3>Property Care</h3>
+            <p>
+                Real transformations from our customers.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="gallery-cta">
+
+    <div>
+        <h2>Ready to Get Started?</h2>
+
+        <p>
+            Request a free quote today and help us build our gallery.
+        </p>
+    </div>
+
+    <a href="{% url 'home' %}#quote" class="primary-btn">
+        Request a Free Quote
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div>
+        <h4>Northstar</h4>
+        <p>Property Services</p>
+    </div>
+
+    <div>
+        <h4>Professional. Reliable. Local.</h4>
+        <p>© 2026 Northstar Property Services. All rights reserved.</p>
+    </div>
+
+    <div>
+        <h4>Contact</h4>
+        <p>(780) 224-8322</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
