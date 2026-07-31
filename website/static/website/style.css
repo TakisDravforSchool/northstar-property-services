@@ -389,14 +389,80 @@ footer {
     }
 }
 
+
+
+
+
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #06204a;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
 /* MOBILE */
 @media (max-width: 900px) {
-    nav {
-        display: none;
-    }
 
     .navbar {
+        position: sticky;
+        top: 0;
+        height: 75px;
         padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        background: transparent;
+        border: none;
+        color: #06204a;
+        font-size: 32px;
+        line-height: 1;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 20px 20px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        z-index: 200;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 0;
+        padding: 14px 8px;
+        border-bottom: 1px solid #e5e7eb;
+        text-align: center;
+    }
+
+    .main-nav a:last-child {
+        border-bottom: none;
     }
 
     .hero {
@@ -431,6 +497,8 @@ footer {
         display: none;
     }
 }
+
+
 
 
 /* SERVICES PAGE */
@@ -2030,3 +2098,12 @@ footer {
     }
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
