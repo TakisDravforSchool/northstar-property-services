@@ -1,0 +1,60 @@
+<header class="navbar">
+{% load static %}
+    <div class="logo">
+        <a
+            href="{% url 'home' %}"
+            aria-label="Northstar Property Services home"
+        >
+            <img
+                src="{% static 'website/images/northstar-logo.jpeg' %}"
+                alt="Northstar Property Services"
+            >
+
+            <div class="logo-text">
+                <h1>Northstar</h1>
+                <small>Property Services</small>
+            </div>
+
+        </a>
+    </div>
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="main-nav"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav
+        id="main-nav"
+        class="main-nav"
+        aria-label="Main navigation"
+    >
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'contact' %}">Contact</a>
+
+        <a
+            class="mobile-call-link"
+            href="tel:+17802248322"
+        >
+            Call Now
+        </a>
+    </nav>
+
+    <a
+        class="phone-btn"
+        href="tel:+17802248322"
+    >
+        Call Now
+    </a>
+
+</header>

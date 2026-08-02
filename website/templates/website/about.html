@@ -12,36 +12,14 @@
     <meta property="og:description" content="Learn about our commitment to dependable property care in Edmonton.">
     <meta property="og:url" content="https://northstarpropertyservices.ca/about/">
     
-      <link rel="stylesheet" href="{% static 'website/style.css' %}?v=41">
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=41">
+    <link rel="stylesheet" href="{% static 'website/style.css' %}?v=50">
+    <link rel="stylesheet" href="{% static 'website/navbar.css' %}?v=1">
 </head>
 <body>
 
-<header class="navbar">
-    <div class="logo">
-        <a href="{% url 'home' %}">
-            <img
-                src="{% static 'website/images/northstar-logo.jpeg' %}"
-                alt="Northstar Property Services Logo">
 
-            
-            <div class="logo-text">
-                <span>Northstar</span>
-                <small>Property Services</small>
-            </div>
-        </a>
-    </div>
-
-    <nav>
-        <a href="{% url 'home' %}">Home</a>
-        <a href="{% url 'services' %}">Services</a>
-
-        <a href="{% url 'about' %}">About Us</a>
-        <a href="{% url 'gallery' %}">Gallery</a>
-        <a href="{% url 'contact' %}">Contact</a>
-    </nav>
-
-    <a class="phone-btn" href="{% url 'home' %}#quote">Request a Quote</a>
-</header>
+    {% include "website/partials/navbar.html" %}
 
 <section class="about-hero">
     <img
@@ -173,6 +151,8 @@
         <p>📞 (780) 224-8322</p>
     </div>
 </footer>
+
+<script src="{% static 'website/menu.js' %}?v=2"></script>
 
 </body>
 </html>
