@@ -1,0 +1,866 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Residential Snow Removal Pricing | Northstar Property Services
+    </title>
+
+    <meta
+        name="description"
+        content="Residential snow removal pricing in Edmonton from Northstar Property Services. View one-time snow removal, seasonal contracts, salting and optional service pricing."
+    >
+
+
+    <!-- MAIN WEBSITE CSS -->
+    <link
+        rel="stylesheet"
+        href="{% static 'website/style.css' %}?v=100"
+    >
+
+
+    <!-- NAVBAR CSS -->
+    <link
+        rel="stylesheet"
+        href="{% static 'website/navbar.css' %}?v=50"
+    >
+
+
+    <!-- NAVBAR / MOBILE MENU JS -->
+    <script
+        src="{% static 'website/menu.js' %}?v=50"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+{% include "website/partials/navbar.html" %}
+
+
+
+<!-- =========================================================
+     RESIDENTIAL PRICING HERO
+========================================================= -->
+
+<section class="res-pricing-hero">
+
+    <div class="res-pricing-hero-content">
+
+        <h1>
+            SIMPLE, CLEAR PRICING
+        </h1>
+
+        <h2>
+            Reliable service. Transparent rates.
+        </h2>
+
+        <p>
+            Quality snow removal and property services
+            for Edmonton homes.
+        </p>
+
+    </div>
+
+
+    <div class="res-pricing-hero-image">
+
+        <img
+            src="{% static 'website/images/residential_pricing.png' %}"
+            alt="Residential snow removal services in Edmonton"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRICING CONTENT
+========================================================= -->
+
+<main class="res-pricing-page">
+
+
+    <!-- =====================================================
+         SUMMARY CARDS
+    ====================================================== -->
+
+    <section class="res-price-summary">
+
+
+        <!-- ONE TIME -->
+
+        <article class="res-summary-card">
+
+            <div class="res-summary-icon res-icon-blue">
+                ❄
+            </div>
+
+            <h3>
+                ONE-TIME SNOW REMOVAL
+            </h3>
+
+            <p>
+                Starting at
+            </p>
+
+            <strong>
+                $39
+            </strong>
+
+            <span>
+                Per Visit
+            </span>
+
+        </article>
+
+
+
+        <!-- SEASONAL -->
+
+        <article class="res-summary-card">
+
+            <div class="res-summary-icon res-icon-green">
+                📅
+            </div>
+
+            <h3>
+                MONTHLY CONTRACTS
+            </h3>
+
+            <p>
+                Starting at
+            </p>
+
+            <strong>
+                $199
+            </strong>
+
+            <span>
+                Per Month
+            </span>
+
+        </article>
+
+
+
+        <!-- SALT -->
+
+        <article class="res-summary-card">
+
+            <div class="res-summary-icon res-icon-blue">
+                ♜
+            </div>
+
+            <h3>
+                SALT ADD-ON
+            </h3>
+
+            <p>
+                Starting at
+            </p>
+
+            <strong>
+                $25
+            </strong>
+
+            <span>
+                Per Visit
+            </span>
+
+        </article>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ONE-TIME SNOW REMOVAL
+    ====================================================== -->
+
+    <section class="res-price-section">
+
+
+        <div class="res-section-heading">
+
+            <div class="res-heading-icon res-icon-blue">
+                ❄
+            </div>
+
+            <h2>
+                ONE-TIME SNOW REMOVAL
+            </h2>
+
+        </div>
+
+
+
+        <div class="res-table-wrapper">
+
+            <table class="res-pricing-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Property Size
+                        </th>
+
+                        <th>
+                            Up to 10 cm Snow
+                        </th>
+
+                        <th>
+                            10–20 cm Snow
+                        </th>
+
+                        <th>
+                            20+ cm Snow
+                        </th>
+
+                        <th>
+                            Walkway Included
+                        </th>
+
+                        <th>
+                            Salt Add-On
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>
+                            Small (1–2 car driveway)
+                        </td>
+
+                        <td>
+                            $39
+                        </td>
+
+                        <td>
+                            $49
+                        </td>
+
+                        <td>
+                            $69
+                        </td>
+
+                        <td>
+                            Yes
+                        </td>
+
+                        <td>
+                            +$25
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Medium (2–4 car driveway)
+                        </td>
+
+                        <td>
+                            $49
+                        </td>
+
+                        <td>
+                            $69
+                        </td>
+
+                        <td>
+                            $89
+                        </td>
+
+                        <td>
+                            Yes
+                        </td>
+
+                        <td>
+                            +$35
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Large (4+ car driveway / Corner Lot)
+                        </td>
+
+                        <td>
+                            $59
+                        </td>
+
+                        <td>
+                            $89
+                        </td>
+
+                        <td>
+                            $119
+                        </td>
+
+                        <td>
+                            Yes
+                        </td>
+
+                        <td>
+                            +$45
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SEASONAL CONTRACTS
+    ====================================================== -->
+
+    <section class="res-price-section">
+
+
+        <div class="res-section-heading">
+
+            <div class="res-heading-icon res-icon-green">
+                📅
+            </div>
+
+
+            <div>
+
+                <h2>
+                    Monthly CONTRACTS 
+                </h2>
+
+                <p>
+                    Unlimited visits whenever snowfall reaches
+                    2 cm or more
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="res-season-card">
+
+
+            <div class="res-table-wrapper">
+
+                <table class="res-pricing-table res-green-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Property Size
+                            </th>
+
+                            <th>
+                                Monthly Price
+                            </th>
+
+                            <th>
+                                Walkway Included
+                            </th>
+
+                            <th>
+                                Salt Package (Monthly)
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>
+                                Small (1–2 car driveway)
+                            </td>
+
+                            <td>
+                                $199
+                            </td>
+
+                            <td>
+                                Yes
+                            </td>
+
+                            <td>
+                                +$100
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+                                Medium (2–4 car driveway)
+                            </td>
+
+                            <td>
+                                $249
+                            </td>
+
+                            <td>
+                                Yes
+                            </td>
+
+                            <td>
+                                +$150
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+                                Large (4+ car driveway / Corner Lot)
+                            </td>
+
+                            <td>
+                                $299
+                            </td>
+
+                            <td>
+                                Yes
+                            </td>
+
+                            <td>
+                                +$200
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- CONTRACT DETAILS -->
+
+            <div class="res-contract-details">
+
+                <h3>
+                    Monthly CONTRACT DETAILS
+                </h3>
+
+
+                <div class="res-contract-row">
+
+                    <span>
+                        Unlimited snow clearing
+                    </span>
+
+                    <strong>
+                        ✓
+                    </strong>
+
+                </div>
+
+
+                <div class="res-contract-row">
+
+                    <span>
+                        Priority service after snowfall
+                    </span>
+
+                    <strong>
+                        ✓
+                    </strong>
+
+                </div>
+
+
+                <div class="res-contract-row">
+
+                    <span>
+                        Driveway clearing
+                    </span>
+
+                    <strong>
+                        ✓
+                    </strong>
+
+                </div>
+
+
+                <div class="res-contract-row">
+
+                    <span>
+                        Front walkway clearing
+                    </span>
+
+                    <strong>
+                        ✓
+                    </strong>
+
+                </div>
+
+
+                <div class="res-contract-row">
+
+                    <span>
+                        Text message updates (optional)
+                    </span>
+
+                    <strong>
+                        ✓
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         OPTIONAL EXTRAS + SALT
+    ====================================================== -->
+
+    <section class="res-bottom-grid">
+
+
+        <!-- EXTRAS -->
+
+        <div class="res-bottom-card">
+
+
+            <div class="res-section-heading res-small-heading">
+
+                <div class="res-heading-icon res-icon-green">
+                    ⚙
+                </div>
+
+                <h2>
+                    OPTIONAL EXTRAS
+                </h2>
+
+            </div>
+
+
+
+            <div class="res-table-wrapper">
+
+                <table class="res-pricing-table res-green-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Service
+                            </th>
+
+                            <th>
+                                Price
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Emergency Same-Day Service
+                            </td>
+
+                            <td>
+                                +$15
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Sidewalk Clearing
+                            </td>
+
+                            <td>
+                                +$15
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Deck / Patio Clearing
+                            </td>
+
+                            <td>
+                                +$15–$30
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Snow Relocation (moving large piles)
+                            </td>
+
+                            <td>
+                                +$25+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SALT PACKAGE -->
+
+        <div class="res-bottom-card">
+
+
+            <div class="res-section-heading res-small-heading">
+
+                <div class="res-heading-icon res-icon-blue">
+                    ♜
+                </div>
+
+                <h2>
+                    MONTHLY SALT PACKAGE
+                </h2>
+
+            </div>
+
+
+
+            <div class="res-table-wrapper">
+
+                <table class="res-pricing-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Property Size
+                            </th>
+
+                            <th>
+                                Monthly Salt Price
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Small
+                            </td>
+
+                            <td>
+                                $100
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Medium
+                            </td>
+
+                            <td>
+                                $150
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Large
+                            </td>
+
+                            <td>
+                                $200
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <p class="res-salt-description">
+                Includes salting after icy conditions and
+                freezing rain events throughout the season.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRICE NOTICE
+    ====================================================== -->
+
+    <section class="res-price-notice">
+
+        <div class="res-notice-icon">
+            i
+        </div>
+
+        <p>
+            Prices may vary depending on snowfall amount,
+            property layout, ice conditions, and additional
+            services requested. We're happy to provide a
+            custom quote!
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="res-pricing-cta">
+
+
+        <div class="res-cta-left">
+
+
+            <div class="res-cta-icon">
+                📋
+            </div>
+
+
+            <div>
+
+                <h2>
+                    NOT SURE WHAT SIZE YOUR<br>
+                    PROPERTY IS?
+                </h2>
+
+                <p>
+                    We're here to help. Get a free,
+                    no-obligation quote tailored to your property.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="res-cta-right">
+
+            <a
+                href="{% url 'contact' %}"
+                class="res-quote-button"
+            >
+                GET A FREE QUOTE
+                <span>→</span>
+            </a>
+
+
+            <a
+                href="tel:+17802248322"
+                class="res-phone"
+            >
+                ☎ 780-224-8322
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+</body>
+
+</html>

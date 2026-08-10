@@ -61,3 +61,13 @@ def gallery(request):
 
 def contact(request):
     return render(request, 'website/contact.html')
+
+
+def residential_pricing(request):
+    return render(request, 'website/residential_pricing.html')
+
+
+# views.py
+
+def commercial_pricing(request):
+    return render(request, 'website/commercial_pricing.html')
